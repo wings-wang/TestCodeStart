@@ -21,7 +21,7 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /helloworld
+            Path: /
             Method: get
 
   PostHelloWorld:
@@ -36,7 +36,7 @@ Resources:
         PostEvent:
           Type: Api
           Properties:
-            Path: /helloworld
+            Path: /
             Method: post
 
 Outputs:
