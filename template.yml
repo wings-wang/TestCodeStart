@@ -28,7 +28,7 @@ Resources:
         HelloWorldApi:
           Type: Api
           Properties:
-            RestApiId: HelloWorldApi
+            RestApiId: !Ref HelloWorldApi
             Path: /hello
             Method: GET
 
