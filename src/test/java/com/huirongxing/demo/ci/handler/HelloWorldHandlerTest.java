@@ -24,7 +24,7 @@ public class HelloWorldHandlerTest {
   //~ Static fields/initializers ---------------------------------------------------------------------------------------
 
   private static final String EXPECTED_CONTENT_TYPE        = "application/json";
-  private static final String EXPECTED_RESPONSE_VALUE      = "Hello World! I am Lambda!";
+  private static final String EXPECTED_RESPONSE_VALUE      = "Hello World! I am Lambda 2!";
   private static final int    EXPECTED_STATUS_CODE_SUCCESS = 200;
 
   //~ Instance fields --------------------------------------------------------------------------------------------------

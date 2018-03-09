@@ -28,6 +28,6 @@ public class HelloWorldHandler implements RequestHandler<Object, Object> {
     Map<String, String> headers = new HashMap<>();
     headers.put("Content-Type", "application/json");
 
-    return new GatewayResponse(new JSONObject().put("Output", "Hello World! I am Lambda!").toString(), headers, 200);
+    return new GatewayResponse(new JSONObject().put("Output", "Hello World! I am Lambda 2!").toString(), headers, 200);
   }
 }
