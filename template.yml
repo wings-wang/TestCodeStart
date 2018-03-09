@@ -13,7 +13,7 @@ Resources:
     Type: AWS::Serverless::Api
     Properties:
       Name: HelloWorldApi
-      StatgName: qa
+      StageName: qa
 
   HelloWorld:
     Type: AWS::Serverless::Function
@@ -28,7 +28,7 @@ Resources:
         HelloWorldApi:
           Type: Api
           Properties:
-            RestApiId: !Ref HelloWorldApi
+            RestApiId: HelloWorldApi
             Path: /hello
             Method: GET
 
