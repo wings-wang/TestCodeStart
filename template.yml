@@ -7,6 +7,9 @@ Parameters:
   ProjectId:
     Type: String
     Description: AWS CodeStar projectID used to associate new resources to team members
+  DeployStage:
+    Type: String
+    Description: Deploy to which stage
 
 Resources:
   HelloWorld:
@@ -15,8 +18,9 @@ Resources:
       Handler: com.huirongxing.demo.ci.handler.HelloWorldHandler::handleRequest
       Runtime: java8
       Timeout: 30
+      MemorySize: 256
       FunctionName: HelloWorld
-      AutoPublishAlias: qa
+      AutoPublishAlias: !Ref 'DeployStage'
       Role:
         Fn::ImportValue:
           !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
