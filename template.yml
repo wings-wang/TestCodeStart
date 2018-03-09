@@ -24,7 +24,6 @@ Resources:
         GetHello:
           Type: Api
           Properties:
-            Name: HelloWorldApi
             Path: /hello
             Method: GET
 
