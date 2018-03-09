@@ -23,7 +23,6 @@ Resources:
           Properties:
             Path: /
             Method: get
-          StageName: beta
 
   PostHelloWorld:
     Type: AWS::Serverless::Function
@@ -39,4 +38,8 @@ Resources:
           Properties:
             Path: /
             Method: post
-          StageName: beta
+
+Outputs:
+  ApiUrl:
+    Description: URL For Applicaiton in dev stage
+    Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/dev'
