@@ -42,4 +42,4 @@ Resources:
 Outputs:
   ApiUrl:
     Description: URL For Applicaiton in dev stage
-    Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/dev'
+    Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/beta'
