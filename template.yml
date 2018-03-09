@@ -12,7 +12,7 @@ Resources:
   HelloWorldApi:
     Type: AWS::Serverless::Api
     Properties:
-      StateName: qa
+      StatgName: qa
 
   HelloWorld:
     Type: AWS::Serverless::Function
