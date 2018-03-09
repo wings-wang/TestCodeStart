@@ -12,6 +12,7 @@ Resources:
   HelloWorldApi:
     Type: AWS::Serverless::Api
     Properties:
+      Name: HelloWorldApi
       StatgName: qa
 
   HelloWorld:
