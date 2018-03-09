@@ -15,6 +15,7 @@ Resources:
       Handler: com.huirongxing.demo.ci.handler.HelloWorldHandler::handleRequest
       Runtime: java8
       Timeout: 30
+      FunctionName: HelloWorld
       AutoPublishAlias: qa
       Role:
         Fn::ImportValue:
@@ -25,5 +26,5 @@ Resources:
           Properties:
             Path: /hello
             Method: GET
-            StageName: qa
+
 
