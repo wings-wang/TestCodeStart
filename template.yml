@@ -23,7 +23,7 @@ Resources:
           Properties:
             Path: /
             Method: get
-            StageName: dev
+          StageName: dev
 
   PostHelloWorld:
     Type: AWS::Serverless::Function
@@ -39,4 +39,4 @@ Resources:
           Properties:
             Path: /
             Method: post
-            StageName: dev
+          StageName: dev
