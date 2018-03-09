@@ -21,10 +21,12 @@ Resources:
         Fn::ImportValue:
           !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
       Events:
-        HelloWorldApi:
+        GetHello:
           Type: Api
           Properties:
+            Name: HelloWorldApi
             Path: /hello
             Method: GET
+            Stage: qa
 
 
