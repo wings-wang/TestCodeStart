@@ -27,6 +27,5 @@ Resources:
             Name: HelloWorldApi
             Path: /hello
             Method: GET
-            StageName: qa
 
 
